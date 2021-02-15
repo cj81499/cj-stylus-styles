@@ -41,7 +41,8 @@
 	body,
 	#breadcrumbs,
 	.btn,
-	#calendar-app .fc-month-view .fc-body
+	#calendar-app .fc-month-view .fc-body,
+	.assignment-student-header-normal
 	{
 		background-color: var(--bg-color-0);
 	}
