@@ -24,12 +24,12 @@
 		
 		--ic-brand-font-color-dark: var(--text-color-dim);
 		--ic-brand-font-color-dark-lightened-30: var(--text-color-dim);
-		--MlJlv-textColor: var(--text-color); 									/* assignment text */
-		--eHiXd-iconColor: var(--text-color); 									/* triple dot menu button */
-		--ic-brand-global-nav-ic-icon-svg-fill--active: var(--bg-color-1); 		/* sidebar icon */
-		--ic-brand-global-nav-menu-item__text-color--active: var(--bg-color-1); /* sidebar text */
-		--fLzZc-background: var(--bg-color-2); 									/* sidebar background */
-		--dxCCp-color: var(--text-color); 										/* courses sidebar subtext */
+		--MlJlv-textColor: var(--text-color);					/* assignment text */
+		--eHiXd-iconColor: var(--text-color);					/* triple dot menu button */
+		--ic-brand-global-nav-ic-icon-svg-fill--active: var(--bg-color-1);	/* sidebar icon */
+		--ic-brand-global-nav-menu-item__text-color--active: var(--bg-color-1);	/* sidebar text */
+		--fLzZc-background: var(--bg-color-2);					/* sidebar background */
+		--dxCCp-color: var(--text-color);					/* courses sidebar subtext */
 	}
 
 	.ic-Dashboard-header__layout,
