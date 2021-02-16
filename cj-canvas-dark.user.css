@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           cj Canvas Dark Mode
 @namespace      https://github.com/cj81499
-@version        0.0.3
+@version        0.0.4
 @description    make school slightly less painful
 @author         Cal Jacobson <cj81499@users.noreply.github.com> (https://github.com/cj81499)
 @homepageURL    https://github.com/cj81499/cj-stylus-styles
@@ -13,19 +13,25 @@
 {
 	:root
 	{
+		/* colors */
 		--bg-color-0: #000;
 		--bg-color-1: #111;
 		--bg-color-2: #222;
 		--text-color: #bbb;
 		--text-color-bright: #eee;
 		--text-color-dim: #888;
-		--fLzZc-background: var(--bg-color-2);
-		--eHiXd-iconColor: var(--text-color);
-		--dxCCp-color: var(--text-color-dim);
+		
+		/* canvas variables */
 		--ic-brand-font-color-dark: var(--text-color-dim);
-		--ic-brand-global-nav-ic-icon-svg-fill--active: var(--bg-color-1);
-		--ic-brand-global-nav-menu-item__text-color--active: var(--bg-color-1);
-		--MlJlv-textColor: var(--text-color)
+		--ic-brand-font-color-dark-lightened-30: var(--text-color-dim);
+		--MlJlv-textColor: magenta;
+
+		--eHiXd-iconColor: var(--text-color); /* triple dot menu button */
+		
+		--ic-brand-global-nav-ic-icon-svg-fill--active: var(--bg-color-1); /* sidebar icon */
+		--ic-brand-global-nav-menu-item__text-color--active: var(--bg-color-1); /* sidebar text */
+		--fLzZc-background: var(--bg-color-2); /* sidebar background */
+		--dxCCp-color: var(--text-color); /* courses sidebar subtext */
 	}
 
 	.ic-Dashboard-header__layout,
@@ -75,7 +81,12 @@
 		background-color: unset;
 	}
 
-	#calendar-app td.fc-day-number.fc-other-month
+	#calendar-app td.fc-day-number.fc-other-month,
+	.ic-DashboardCard__header-subtitle,
+	.ic-DashboardCard__header-term,
+	#right-side .right-side-list li a > i,
+	#right-side .right-side-list li em,
+	#right-side .right-side-list li p
 	{
 		color: var(--text-color-dim);
 	}
