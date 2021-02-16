@@ -1,13 +1,14 @@
 /* ==UserStyle==
 @name           cj Canvas Dark Mode
 @namespace      https://github.com/cj81499
-@version        0.0.5
+@version        0.0.6
 @description    make school slightly less painful
 @author         Cal Jacobson <cj81499@users.noreply.github.com> (https://github.com/cj81499)
 @homepageURL    https://github.com/cj81499/cj-stylus-styles
 @supportURL     https://github.com/cj81499/cj-stylus-styles/issues
 @license        CC-BY-SA-4.0
 ==/UserStyle== */
+
 @-moz-document domain("instructure.com")
 {
 	:root
@@ -21,25 +22,19 @@
 		--text-color-dim: #888;
 
 		/* === canvas variables === */
-		
-		--ic-brand-font-color-dark: var(--text-color-dim);
-		--ic-brand-font-color-dark-lightened-30: var(--text-color-dim);
+		--ic-brand-font-color-dark: var(--text-color-dim);			/* */
+		--ic-brand-font-color-dark-lightened-30: var(--text-color-dim);		/* */
 		--MlJlv-textColor: var(--text-color);					/* assignment text */
 		--eHiXd-iconColor: var(--text-color);					/* triple dot menu button */
 		--ic-brand-global-nav-ic-icon-svg-fill--active: var(--bg-color-1);	/* sidebar icon */
 		--ic-brand-global-nav-menu-item__text-color--active: var(--bg-color-1);	/* sidebar text */
 		--fLzZc-background: var(--bg-color-2);					/* sidebar background */
-		--dxCCp-color: var(--text-color);					/* courses sidebar subtext */
-	}
-
-	.ic-Dashboard-header__layout,
-	.ic-Action-header,
-	.pages.show .page-title,
-	.pages.show .course-title,
-	.header-bar
-	{
-		background-color: var(--bg-color-0);
-		color: var(--text-color-bright);
+		--dxCCp-color: var(--text-color);					/* courses sidebar subtex */
+		--ftPBL-backgroundColor: var(--bg-color-0);				/* assignment submit bg */
+		--blnAQ-primaryColor: var(--text-color-bright);				/* assignment submit text */
+		--XBLto-defaultBackground: var(--bg-color-0);				/* tabs background */
+		--bdYPe-defaultColor: var(--text-color);				/* tabs text */
+		--dpCPB-background: var(--bg-color-0);					/* assignment submit bg */
 	}
 
 	body,
@@ -53,11 +48,22 @@
 	}
 
 	.ic-app-header,
-	.ic-DashboardCard,
-	.ic-DashboardCard__header_content,
-	.question
+	.ic-DashboardCard,					/* */
+	.ic-DashboardCard__header_content,			/* */
+	.question,						/* */
+	.toolbarView .headerBar,				/* discussion header */
+	.discussion_entry,					/* discussion post */
+	.course-list-table .course-list-table-row:hover,	/* course list hover */
+	.course-list-unpublished-course-row			/* course list unpublished */
 	{
 		background-color: var(--bg-color-1)
+	}
+	
+	#calendar-app .fc-month-view .fc-today,
+	#calendar-drag-and-drop-container .fc-month-view .fc-today,
+	.question .header
+	{
+		background-color: var(--bg-color-2);
 	}
 
 	body,
@@ -66,17 +72,20 @@
 		color: var(--text-color);
 	}
 
-	#calendar-app .fc-month-view .fc-today,
-	#calendar-drag-and-drop-container .fc-month-view .fc-today,
-	.question .header
-	{
-		background-color: var(--bg-color-2);
-	}
-
 	#calendar-app .fc-event,
 	#calendar-drag-and-drop-container .fc-event
 	{
 		background-color: unset;
+	}
+	
+	.ic-Dashboard-header__layout,
+	.ic-Action-header,
+	.pages.show .page-title,
+	.pages.show .course-title,
+	.header-bar
+	{
+		background-color: var(--bg-color-0);
+		color: var(--text-color-bright);
 	}
 
 	#calendar-app td.fc-day-number.fc-other-month,
@@ -84,14 +93,17 @@
 	.ic-DashboardCard__header-term,
 	#right-side .right-side-list li a > i,
 	#right-side .right-side-list li em,
-	#right-side .right-side-list li p
+	#right-side .right-side-list li p,
+	.discussion-pubdate, .discussion-tododate,	/* discussion date */
+	.icon-more.standalone-icon::before		/* discussion triple dots */
 	{
 		color: var(--text-color-dim);
 	}
 
 	.unpublished_courses_redesign .ic-DashboardCard__box__header,
 	#right-side .to-do-list .todo-details:after,
-	#right-side .events_list .event-details:after
+	#right-side .events_list .event-details:after,
+	.ic-app-header__logomark-container				/* background behind header logo */
 	{
 		background: unset;
 	}
@@ -105,10 +117,5 @@
 	.ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .ic-app-header__menu-list-link
 	{
 		background-color: var(--ic-link-color);
-	}
-
-	.ic-app-header__logomark-container
-	{
-		background-color: unset
 	}
 }
