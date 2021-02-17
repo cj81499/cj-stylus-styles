@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           cj Canvas Dark Mode
 @namespace      https://github.com/cj81499
-@version        0.0.6
+@version        0.0.7
 @description    make school slightly less painful
 @author         Cal Jacobson <cj81499@users.noreply.github.com> (https://github.com/cj81499)
 @homepageURL    https://github.com/cj81499/cj-stylus-styles
@@ -67,7 +67,8 @@
 	}
 
 	body,
-	#create_new_event_link
+	#create_new_event_link,
+	.cjUyb_bGBk code, .cjUyb_bGBk pre	/* code blocks on assignment pages */
 	{
 		color: var(--text-color);
 	}
