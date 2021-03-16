@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           cj Canvas Dark Mode
 @namespace      https://github.com/cj81499
-@version        0.0.9
+@version        0.0.10
 @description    make school slightly less painful
 @author         Cal Jacobson <cj81499@users.noreply.github.com> (https://github.com/cj81499)
 @homepageURL    https://github.com/cj81499/cj-stylus-styles
@@ -15,28 +15,29 @@
 	{
 		/* === colors === */
 		--bg-color-0: #000;
-		--bg-color-1: #222;
-		--bg-color-2: #333;
+		--bg-color-1: #181818;
+		--bg-color-2: #222;
 		--text-color: #bbb;
 		--text-color-bright: #eee;
 		--text-color-dim: #888;
 
 		/* === canvas variables === */
-		--ic-brand-font-color-dark: var(--text-color-dim);			/* */
-		--ic-brand-font-color-dark-lightened-30: var(--text-color);		/* */
-		--MlJlv-textColor: var(--text-color);					/* assignment text */
-		--eHiXd-iconColor: var(--text-color);					/* triple dot menu button */
-		--ic-brand-global-nav-ic-icon-svg-fill--active: var(--bg-color-1);	/* sidebar icon */
-		--ic-brand-global-nav-menu-item__text-color--active: var(--bg-color-1);	/* sidebar text */
-		--fLzZc-background: var(--bg-color-2);					/* sidebar background */
-		--dxCCp-color: var(--text-color);					/* courses sidebar subtex */
-		--ftPBL-backgroundColor: var(--bg-color-0);				/* assignment submit bg */
+		--ic-brand-font-color-dark: var(--text-color);				/* misc menu text */
+		--ic-brand-font-color-dark-lightened-30: var(--text-color);		/* dashboard course name text */
+		--eHiXd-iconColor: inherit;						/* triple dot menu button */
+		--ic-brand-global-nav-ic-icon-svg-fill--active: var(--bg-color-1);	/* sidebar active icon */
+		--ic-brand-global-nav-menu-item__text-color--active: var(--bg-color-1);	/* sidebar active text */
+		--fLzZc-background: var(--bg-color-2);					/* sidebar open background */
+		--dxCCp-color: inherit;							/* courses sidebar subtex */
+		--MlJlv-textColor: inherit;						/* assignment text */
+		--ftPBL-backgroundColor: inherit;					/* assignment submit bg */
 		--blnAQ-primaryColor: var(--text-color-bright);				/* assignment submit text */
-		--XBLto-defaultBackground: var(--bg-color-0);				/* tabs background */
-		--bdYPe-defaultColor: var(--text-color);				/* tabs text */
-		--dpCPB-background: var(--bg-color-0);					/* assignment submit bg */
-		--jpyTq-color: var(--text-color);					/* course page To Do icon */
-		--ctrLD-color: inherit							/* course page To Do text */
+		--XBLto-defaultBackground: inherit;					/* assignment tabs background */
+		--bdYPe-defaultColor: inherit;						/* assignment tabs text */
+		--dpCPB-background: inherit;						/* assignment submit bg */
+		--dpCPB-color: inherit;							/* assignment text submission */
+		--jpyTq-color: inherit;							/* course page To Do icon */
+		--ctrLD-color: inherit;							/* course page To Do text */
 	}
 
 	body,
