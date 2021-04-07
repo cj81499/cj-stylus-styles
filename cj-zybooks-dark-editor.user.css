@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Zybooks Dark Editor
 @namespace      https://github.com/cj81499
-@version        1.0.0
+@version        1.1.0
 @description    A Dark Editor for Zybooks. Monokai via: https://ace.c9.io/build/kitchen-sink.html
 @author         Cal Jacobson <cj81499@users.noreply.github.com> (https://github.com/cj81499)
 @homepageURL    https://github.com/cj81499/cj-stylus-styles
@@ -11,6 +11,15 @@
 @-moz-document domain("learn.zybooks.com") {
   .zylab-inline-editor .inline-editor-header {
     background: #2f3129;
+  }
+
+  div.codeOutput div.tool-container div.input-div,
+  div.codeOutput textarea.console {
+    color: #E5E5E5;
+    background: #222;
+    border: 1px solid #666;
+    border-radius: 3px;
+    box-shadow: none;
   }
 
   .ace-editor .ace_gutter {
