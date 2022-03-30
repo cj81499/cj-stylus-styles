@@ -1,0 +1,71 @@
+/* ==UserStyle==
+@name           cj Apache Dark Mode
+@namespace      https://github.com/cj81499
+@version        0.1.0
+@description    make reading apache's docs slightly less painful
+@author         Cal Jacobson <cj81499@users.noreply.github.com> (https://github.com/cj81499)
+@homepageURL    https://github.com/cj81499/cj-stylus-styles
+@supportURL     https://github.com/cj81499/cj-stylus-styles/issues
+@license        MIT
+==/UserStyle== */
+@-moz-document domain("apache.org") {
+    :root {
+        --main-bg0: hsl(0, 0%, 5%);
+        --main-bg1: hsl(0, 0%, 10%);
+        --main-bg2: hsl(0, 0%, 15%);
+        --main-bg3: hsl(0, 0%, 20%);
+
+        --main-fg0: hsl(0, 0%, 90%);
+        --main-fg1: hsl(0, 0%, 80%);
+        --main-fg2: hsl(0, 0%, 70%);
+    }
+
+    body {
+        background-color: var(--main-bg0);
+        color: var(--main-fg0);
+    }
+
+    a:hover,
+    a:focus {
+        color: #09d;
+    }
+
+    pre {
+        color: var(--main-fg1);
+        background: var(--main-bg1);
+        border: 1px solid var(--main-bg3);
+    }
+
+    .breadcrumb,
+    .well {
+        background: var(--main-bg1);
+        border: 1px solid var(--main-bg3);
+        box-shadow: none;
+    }
+
+    .breadcrumb > li,
+    .nav-list > li > a,
+    .nav-list .nav-header {
+        text-shadow: none;
+    }
+
+    .nav > li > a:hover,
+    .nav > li > a:focus {
+        background: var(--main-bg2);
+    }
+
+    li {
+        color: var(--main-fg2);
+    }
+
+    .table-striped tbody > tr:nth-child(odd) > td,
+    .table-striped tbody > tr:nth-child(odd) > th {
+        background: var(--main-bg1);
+    }
+
+    [class^="icon-"],
+    [class*=" icon-"] {
+        filter: invert(100%);
+        /* invert spritesheet */
+    }
+}
