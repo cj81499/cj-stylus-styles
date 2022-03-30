@@ -1,123 +1,123 @@
 /* ==UserStyle==
 @name           Zybooks Dark Editor
 @namespace      https://github.com/cj81499
-@version        1.1.0
+@version        1.1.1
 @description    A Dark Editor for Zybooks. Monokai via: https://ace.c9.io/build/kitchen-sink.html
 @author         Cal Jacobson <cj81499@users.noreply.github.com> (https://github.com/cj81499)
 @homepageURL    https://github.com/cj81499/cj-stylus-styles
 @supportURL     https://github.com/cj81499/cj-stylus-styles/issues
+@license        MIT
 ==/UserStyle== */
-
 @-moz-document domain("learn.zybooks.com") {
-  .zylab-inline-editor .inline-editor-header {
-    background: #2f3129;
-  }
+    .zylab-inline-editor .inline-editor-header {
+        background: #2f3129;
+    }
 
-  div.codeOutput div.tool-container div.input-div,
-  div.codeOutput textarea.console {
-    color: #E5E5E5;
-    background: #222;
-    border: 1px solid #666;
-    border-radius: 3px;
-    box-shadow: none;
-  }
+    div.codeOutput div.tool-container div.input-div,
+    div.codeOutput textarea.console {
+        color: #e5e5e5;
+        background: #222;
+        border: 1px solid #666;
+        border-radius: 3px;
+        box-shadow: none;
+    }
 
-  .ace-editor .ace_gutter {
-    background: #2f3129;
-    color: #8f908a;
-  }
-  .ace-editor .ace_print-margin {
-    width: 1px;
-    background: #555651;
-  }
-  .ace-editor {
-    background-color: #272822;
-    color: #f8f8f2;
-  }
-  .ace-editor .ace_cursor {
-    color: #f8f8f0;
-  }
-  .ace-editor .ace_marker-layer .ace_selection {
-    background: #49483e;
-  }
-  .ace-editor.ace_multiselect .ace_selection.ace_start {
-    box-shadow: 0 0 3px 0px #272822;
-  }
-  .ace-editor .ace_marker-layer .ace_step {
-    background: rgb(102, 82, 0);
-  }
-  .ace-editor .ace_marker-layer .ace_bracket {
-    margin: -1px 0 0 -1px;
-    border: 1px solid #49483e;
-  }
-  .ace-editor .ace_marker-layer .ace_active-line {
-    background: #202020;
-  }
-  .ace-editor .ace_gutter-active-line {
-    background-color: #272727;
-  }
-  .ace-editor .ace_marker-layer .ace_selected-word {
-    border: 1px solid #49483e;
-  }
-  .ace-editor .ace_invisible {
-    color: #52524d;
-  }
-  .ace-editor .ace_entity.ace_name.ace_tag,
-  .ace-editor .ace_keyword,
-  .ace-editor .ace_meta.ace_tag,
-  .ace-editor .ace_storage {
-    color: #f92672;
-  }
-  .ace-editor .ace_punctuation,
-  .ace-editor .ace_punctuation.ace_tag {
-    color: #fff;
-  }
-  .ace-editor .ace_constant.ace_character,
-  .ace-editor .ace_constant.ace_language,
-  .ace-editor .ace_constant.ace_numeric,
-  .ace-editor .ace_constant.ace_other {
-    color: #ae81ff;
-  }
-  .ace-editor .ace_invalid {
-    color: #f8f8f0;
-    background-color: #f92672;
-  }
-  .ace-editor .ace_invalid.ace_deprecated {
-    color: #f8f8f0;
-    background-color: #ae81ff;
-  }
-  .ace-editor .ace_support.ace_constant,
-  .ace-editor .ace_support.ace_function {
-    color: #66d9ef;
-  }
-  .ace-editor .ace_fold {
-    background-color: #a6e22e;
-    border-color: #f8f8f2;
-  }
-  .ace-editor .ace_storage.ace_type,
-  .ace-editor .ace_support.ace_class,
-  .ace-editor .ace_support.ace_type {
-    font-style: italic;
-    color: #66d9ef;
-  }
-  .ace-editor .ace_entity.ace_name.ace_function,
-  .ace-editor .ace_entity.ace_other,
-  .ace-editor .ace_entity.ace_other.ace_attribute-name,
-  .ace-editor .ace_variable {
-    color: #a6e22e;
-  }
-  .ace-editor .ace_variable.ace_parameter {
-    font-style: italic;
-    color: #fd971f;
-  }
-  .ace-editor .ace_string {
-    color: #e6db74;
-  }
-  .ace-editor .ace_comment {
-    color: #75715e;
-  }
-  .ace-editor .ace_indent-guide {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ0FD0ZXBzd/wPAAjVAoxeSgNeAAAAAElFTkSuQmCC)
-      right repeat-y;
-  }
+    .ace-editor .ace_gutter {
+        background: #2f3129;
+        color: #8f908a;
+    }
+    .ace-editor .ace_print-margin {
+        width: 1px;
+        background: #555651;
+    }
+    .ace-editor {
+        background-color: #272822;
+        color: #f8f8f2;
+    }
+    .ace-editor .ace_cursor {
+        color: #f8f8f0;
+    }
+    .ace-editor .ace_marker-layer .ace_selection {
+        background: #49483e;
+    }
+    .ace-editor.ace_multiselect .ace_selection.ace_start {
+        box-shadow: 0 0 3px 0px #272822;
+    }
+    .ace-editor .ace_marker-layer .ace_step {
+        background: rgb(102, 82, 0);
+    }
+    .ace-editor .ace_marker-layer .ace_bracket {
+        margin: -1px 0 0 -1px;
+        border: 1px solid #49483e;
+    }
+    .ace-editor .ace_marker-layer .ace_active-line {
+        background: #202020;
+    }
+    .ace-editor .ace_gutter-active-line {
+        background-color: #272727;
+    }
+    .ace-editor .ace_marker-layer .ace_selected-word {
+        border: 1px solid #49483e;
+    }
+    .ace-editor .ace_invisible {
+        color: #52524d;
+    }
+    .ace-editor .ace_entity.ace_name.ace_tag,
+    .ace-editor .ace_keyword,
+    .ace-editor .ace_meta.ace_tag,
+    .ace-editor .ace_storage {
+        color: #f92672;
+    }
+    .ace-editor .ace_punctuation,
+    .ace-editor .ace_punctuation.ace_tag {
+        color: #fff;
+    }
+    .ace-editor .ace_constant.ace_character,
+    .ace-editor .ace_constant.ace_language,
+    .ace-editor .ace_constant.ace_numeric,
+    .ace-editor .ace_constant.ace_other {
+        color: #ae81ff;
+    }
+    .ace-editor .ace_invalid {
+        color: #f8f8f0;
+        background-color: #f92672;
+    }
+    .ace-editor .ace_invalid.ace_deprecated {
+        color: #f8f8f0;
+        background-color: #ae81ff;
+    }
+    .ace-editor .ace_support.ace_constant,
+    .ace-editor .ace_support.ace_function {
+        color: #66d9ef;
+    }
+    .ace-editor .ace_fold {
+        background-color: #a6e22e;
+        border-color: #f8f8f2;
+    }
+    .ace-editor .ace_storage.ace_type,
+    .ace-editor .ace_support.ace_class,
+    .ace-editor .ace_support.ace_type {
+        font-style: italic;
+        color: #66d9ef;
+    }
+    .ace-editor .ace_entity.ace_name.ace_function,
+    .ace-editor .ace_entity.ace_other,
+    .ace-editor .ace_entity.ace_other.ace_attribute-name,
+    .ace-editor .ace_variable {
+        color: #a6e22e;
+    }
+    .ace-editor .ace_variable.ace_parameter {
+        font-style: italic;
+        color: #fd971f;
+    }
+    .ace-editor .ace_string {
+        color: #e6db74;
+    }
+    .ace-editor .ace_comment {
+        color: #75715e;
+    }
+    .ace-editor .ace_indent-guide {
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ0FD0ZXBzd/wPAAjVAoxeSgNeAAAAAElFTkSuQmCC)
+            right repeat-y;
+    }
 }
