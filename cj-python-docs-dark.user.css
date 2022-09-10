@@ -1,0 +1,134 @@
+/* ==UserStyle==
+@name           Python Docs Dark
+@namespace      https://github.com/cj81499
+@version        1.0.0
+@description    A dark theme for the Python docs.
+@author         Cal Jacobson <cj81499@users.noreply.github.com> (https://github.com/cj81499)
+@homepageURL    https://github.com/cj81499/cj-stylus-styles
+@supportURL     https://github.com/cj81499/cj-stylus-styles/issues
+@license        MIT
+==/UserStyle== */
+@-moz-document domain("docs.python.org") {
+    :root {
+        --bg0: hsl(0, 0%, 10%);
+        --bg1: hsl(0, 0%, 13%);
+        --bg2: hsl(0, 0%, 25%);
+
+        --fg2: hsl(0, 0%, 50%);
+        --fg1: hsl(0, 0%, 75%);
+        --fg0: hsl(0, 0%, 85%);
+
+        --code: #162915;
+        --code-border: #15550a;
+
+        --see-also: #2b1733;
+        --see-also-border: #560873;
+
+        --warning: #502b2b;
+        --warning-code: #642929;
+        --warning-border: #d35757;
+
+        --note: #101b27;
+        --note-code: #051320;
+        --note-border: #082b4f;
+    }
+
+    html,
+    body,
+    div.document,
+    div.body,
+    div.body h1,
+    div.body h2,
+    div.body h3,
+    div.body h4,
+    div.body h5,
+    div.body h6 {
+        background: var(--bg0);
+        color: var(--fg0);
+    }
+
+    div.footer,
+    div.footer a {
+        color: var(--fg2);
+    }
+
+    .menu-wrapper {
+        background: var(--bg0);
+        color: var(--fg0);
+    }
+
+    .menu a,
+    .menu h3 {
+        color: var(--fg0);
+    }
+
+    code {
+        background: var(--bg0);
+    }
+
+    pre {
+        color: var(--fg1);
+    }
+
+    div.body pre {
+        background: var(--code);
+        border-color: var(--code-border);
+    }
+
+    div.body div.seealso {
+        background: var(--see-also);
+        border-color: var(--see-also-border);
+    }
+
+    div.warning {
+        background-color: var(--warning);
+        border-color: var(--warning-border);
+    }
+
+    .warning code {
+        background: var(--warning-code);
+    }
+
+    div.note {
+        background-color: var(--note);
+        border-color: var(--note-border);
+    }
+
+    .note code {
+        background: var(--note-code);
+    }
+
+    div.topic {
+        background: var(--bg1);
+        border-color: var(--bg2);
+    }
+
+    /* sidebar */
+    div.sphinxsidebar {
+        background: var(--bg1);
+    }
+
+    div.sphinxsidebar h3,
+    div.sphinxsidebar h3 a,
+    div.sphinxsidebar a,
+    div.sphinxsidebar h4,
+    div.sphinxsidebar ul {
+        color: var(--fg1);
+    }
+
+    th,
+    dl.field-list > dt {
+        background: var(--bg1);
+    }
+
+    table.docutils td,
+    table.docutils th {
+        border-radius: 0;
+        border: 1px solid var(--bg2) !important;
+        background: var(--bg0);
+    }
+
+    table.docutils th {
+        background: var(--bg1);
+    }
+}
