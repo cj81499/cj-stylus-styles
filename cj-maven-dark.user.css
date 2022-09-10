@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           cj Apache Dark Mode
+@name           cj Maven Dark Mode
 @namespace      https://github.com/cj81499
 @version        0.1.0
-@description    make reading apache's docs slightly less painful
+@description    make reading maven's docs slightly less painful
 @author         Cal Jacobson <cj81499@users.noreply.github.com> (https://github.com/cj81499)
 @homepageURL    https://github.com/cj81499/cj-stylus-styles
 @supportURL     https://github.com/cj81499/cj-stylus-styles/issues
 @license        MIT
 ==/UserStyle== */
-@-moz-document domain("apache.org") {
+@-moz-document domain("maven.apache.org") {
     :root {
         --main-bg0: hsl(0, 0%, 5%);
         --main-bg1: hsl(0, 0%, 10%);
